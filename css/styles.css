@@ -61,6 +61,7 @@ version:   1.0
   --bs-body-color: #000;
   --bs-link-color: inherit;
   --bs-link-decoration: none;
+  --bs-link-hover-color-rgb: #9f6e31;
 
   --bs-border-radius: 40px;
   --bs-border-radius-sm: 0;
@@ -162,6 +163,10 @@ button,
 
 a {
   color: inherit;
+
+  &:hover {
+    color: #9f6e31;
+  }
 }
 
 /* End General
@@ -200,8 +205,8 @@ a {
   --bs-btn-bg: var(--bs-primary);
   --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: var(--bs-primary);
-  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #9f6e31;
+  --bs-btn-hover-border-color: #9f6e31;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: var(--bs-primary);
   --bs-btn-active-border-color: var(--bs-primary);
@@ -213,8 +218,8 @@ a {
   --bs-btn-bg: transparent;
   --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-color: var(--bs-primary);
-  --bs-btn-hover-bg: transparent;
-  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #9f6e31;
   --bs-btn-active-color: var(--bs-primary);
   --bs-btn-active-bg: transparent;
   --bs-btn-active-border-color: var(--bs-primary);
@@ -312,6 +317,9 @@ a {
 .navbar-nav a {
   display: block;
   padding: 10px 0;
+}
+.navbar-nav a:hover {
+  color: #9f6e31;
 }
 .socials {
   padding: 0;
@@ -551,7 +559,7 @@ a {
   text-decoration: underline;
 }
 .block-intro .h4 a:hover {
-  text-decoration: none;
+  color: #9f6e31;
 }
 .block-intro .text {
   margin: 35px 0 0;
@@ -892,6 +900,9 @@ a {
   line-height: 28px;
   letter-spacing: 0;
 }
+.block-contact-links a:hover {
+  color: #9f6e31;
+}
 .block-contact-links a .icon {
   display: flex;
   align-items: center;
@@ -914,6 +925,7 @@ a {
 .footer .logo {
   width: 172px;
   margin: 0 auto 32px;
+  display: block;
 }
 .footer .logo img {
   display: block;
@@ -935,6 +947,9 @@ a {
 }
 .footer-nav li {
   margin: 0 0 20px;
+}
+.footer-nav a:hover {
+  color: #9f6e31;
 }
 .footer .socials {
   margin: 0 0 40px;
@@ -958,4 +973,36 @@ a {
 }
 .footer-bottom .footer-links a {
   margin: 0 10px;
+}
+.footer-bottom .footer-links a:hover {
+  color: #9f6e31;
+}
+
+.modal-video {
+  --bs-modal-width: 90%;
+}
+.modal-video .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+.modal-video .modal-content {
+  background: none;
+  border: none;
+}
+.modal-video .modal-body {
+  padding: 40px 0 0;
+}
+.modal-video .video-wrapper {
+  position: relative;
+  padding: 56.6% 0 0;
+}
+.modal-video video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
